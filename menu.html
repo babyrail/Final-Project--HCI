@@ -19,7 +19,9 @@
         <a href="about.html">About</a>
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact</a>
-        <i class="fas fa-times closeMobileNav"></i>    
+        <i class="fas fa-times closeMobileNav"></i> 
+        <a href="addtocart.html" button class="add-to-cart-btn">Cart</button> </a> 
+   
     </div>
     <i class="fas fa-bars hamburgerMenu"></i>
   </header>
@@ -32,18 +34,22 @@
           <h3>Drip Coffee</h3>
           <p id="menu-grid">A classic method of brewing coffee using a coffee maker, which drips hot water through a filter filled with ground coffee beans. </p>
           <span>P80</span>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="img/espresso.jpg" alt="coffee 2">
           <h3>Espresso</h3>
           <p id="menu-grid">A concentrated shot of coffee made by forcing pressurized hot water through finely ground coffee beans. Espresso has a strong and bold flavor.</p>
           <span>P85</span>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="img/cappuccino.jpg" alt="coffee 3">
           <h3>americano</h3>
           <p id="menu-grid">A simple coffee made by adding hot water to a shot of espresso. This creates a longer, milder coffee.</p>
           <span>P80</span>
+          <button class="add-to-cart-button">Add to Cart</button>
+
         </div>
       </div>
       <div class="menu-row">
@@ -52,12 +58,16 @@
           <h3>Iced Coffee</h3>
           <p id="menu-grid"> a classic cold coffee made by brewing coffee using hot water and then cooling it down with ice. It is usually served with milk and sugar.</p>
           <span>P70</span>
+          <button class="add-to-cart-button">Add to Cart</button>
+
         </div>
         <div class="menu-item">
           <img src="img/cold coffe 3.jfif" alt="coffee 5">
           <h3>Cold Brew Coffee</h3>
           <p id="menu-grid">Cold brew coffee is made by steeping coarsely ground coffee in cold water for 12-24 hours. This process results in a smooth, less acidic coffee with a sweeter flavor.</p>
           <span>P90</span>
+          <button class="add-to-cart-button">Add to Cart</button>
+
         </div>
         <div class="menu-item">
           <img src="img/americano.jpg" alt="coffee 6">
@@ -65,24 +75,31 @@
           <p id="menu-grid">made by infusing cold brew coffee with nitrogen gas, resulting in a creamy, foamy texture similar to that of a beer. It has a smooth and velvety mouthfeel.
           </p>
           <span>P85</span>
+          <button class="add-to-cart-button">Add to Cart</button>
+
         </div>
             <div class="menu-item">
               <img src="img/Frank-about-tea-earl-grey-thee-300x300.jpg" alt="coffee 1">
               <h3>Drip Coffee</h3>
               <p id="menu-grid">Your morning grey with a twist Our own version of the classic Earl Grey, with lavender and pink pepper. Raising it from ordinary to extraordinary. </p>
               <span>P80</span>
+              <button class="add-to-cart-button">Add to Cart</button>
+
             </div>
             <div class="menu-item">
               <img src="img/nomad-300x300 (1).jpg" alt="coffee 2">
               <h3>Espresso</h3>
               <p id="menu-grid">Nomad is a 2 origin Colombia and Guatemala Blend. An easy drinking medium bodied and balanced coffee.</p>
               <span>P85</span>
+              <button class="add-to-cart-button">Add to Cart</button>
+
             </div>
             <div class="menu-item">
               <img src="img/ginger_lemon_mockup-768x638-1-300x300.jpg" alt="coffee 3">
               <h3>americano</h3>
               <p id="menu-grid">An Earl Gray-esque morning tea with a twist. Our own version of the classic Earl Gray, with natural bergamot.</p>
               <span>P80</span>
+                        <button class="add-to-cart-button">Add to Cart</button>
             </div>
       </div>
     </section>
@@ -192,7 +209,17 @@
            navBar.classList.add('hidden');
            navBar.classList.remove('hide');
            console.log("clicked")
-          });</script>
+          });
+          <button onclick="addToCart()">Add to Cart</button>
+          function addToCart() {
+            // Your code to add the item to the cart goes here.
+            // This could involve sending an AJAX request to a server-side script,
+            // updating a shopping cart object, or performing some other action.
+          
+            // For example, you could display a message to the user indicating that the item was added to the cart:
+            alert('Item added to cart!');
+          }
+        </script>
         </body>
 </html>   
 

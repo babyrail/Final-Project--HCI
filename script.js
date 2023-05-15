@@ -56,3 +56,8 @@ var scrollToTopBtn = document.getElementById("scroll-to-top-btn");
   }
 
   scrollToTopBtn.addEventListener("click", scrollToTop);
+
+  var addToCartBtn = document.querySelector('.add-to-cart-btn');
+addToCartBtn.addEventListener('click', function() {
+  // Add item to cart logic here
+});
